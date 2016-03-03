@@ -1,3 +1,4 @@
+var THREE = require('./three.min.js');
 /* globals THREE */
 /**
  * DeviceOrientationControls - applies device orientation on object rotation

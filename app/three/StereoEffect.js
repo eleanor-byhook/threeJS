@@ -1,3 +1,4 @@
+var THREE = require('./three.min.js');
 /**
  * @author alteredq / http://alteredqualia.com/
  * @authod mrdoob / http://mrdoob.com/
@@ -52,7 +53,7 @@ THREE.StereoEffect = function ( renderer ) {
 		scene.updateMatrixWorld();
 
 		if ( camera.parent === undefined ) camera.updateMatrixWorld();
-	
+
 		camera.matrixWorld.decompose( _position, _quaternion, _scale );
 
 		// Stereo frustum calculation
